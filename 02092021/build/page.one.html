@@ -3,7 +3,11 @@
 <head>
     <meta charset='UTF-8'                                                 />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <link rel='stylesheet' href='page.one.css'>
+    <link rel='stylesheet' href='page.one.css'                                                                            />
+    <link rel='preconnect' href='https://fonts.googleapis.com'                                                            />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin                                                   />
+    <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap' rel='stylesheet'           />
+    <link href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,800&family=Roboto+Condensed:wght@300;400;700&display=swap' rel='stylesheet'>
     <title>Page #1</title>
 </head>
 <body>
@@ -12,8 +16,15 @@
         <table class='w-full table-auto'>
             <thead>
                 <tr class='border-b border-blue-100'>
-                    <th class='py-3 px-4'><input type='checkbox' class='rounded border-2 border-blue-100' /></th>
-                    <th class='py-3 px-6 text-left'>Localisation dispositif</th>
+                    <th class='py-3 px-4'>
+                        <div class='checkbox-container'>
+                            <input type='checkbox' class='opacity-0 absolute h-4 w-4 rounded border-2 border-blue-200' />
+                            <div class='bg-white border-2 rounded cursor-pointer yes border-blue-200 w-4 h-4 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-yellow-500'>
+                                <div class='w-2 h-2 bg-yellow-500 yes-checkmark rounded-xs'></div>
+                            </div>
+                        </div>
+                    </th>
+                    <th class='py-3 px-6 text-left'>Localisation <br />dispositif</th>
                     <th class='py-3 px-6 text-left'>Dernière MAJ</th>
                     <th class='py-3 px-1 text-left'>Code MAC</th>
                     <th class='py-3 px-2 text-left'>TCOV</th>
@@ -24,31 +35,42 @@
             </thead>
             <tbody class='text-sm'>
                 <tr class='border-b border-blue-100'>
-                    <td class='py-3 px-4'><input type='checkbox' class='rounded border-2 border-blue-200' /></td>
+                    <td class='py-3 px-4'>
+                        <div class='checkbox-container'>
+                            <input type='checkbox' class='opacity-0 absolute h-4 w-4 rounded border-2 border-blue-200' />
+                            <div class='bg-white border-2 rounded cursor-pointer yes border-blue-200 w-4 h-4 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-yellow-500'>
+                                <div class='w-2 h-2 bg-yellow-500 yes-checkmark rounded-xs'></div>
+                            </div>
+                        </div>
+                    </td>
                     <td class='py-3 px-6 font-bold text-md'>#INV-0001234</td>
-                    <td class='py-3 px-6'>June 1, 2020, 08:22 AM</td>
-                    <td class='py-3 px-1 flex flex-row space-x-2 justify-between items-center'>
-                        <span class='w-10 h-10 rounded-md block bg-blue-400'></span>
+                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
+                    <td class='py-3 px-1 flex flex-row space-x-5 justify-start items-center'>
+                        <span class='w-10 h-10 rounded-xl block bg-slate-gray'></span>
                         <div  class='flex flex-col justify-start items-start space-y-1'>
                             <h2 class='font-bold text-md'>Nella Vita</h2>
-                            <p  class='text-xs'>Creative Agency</p>
+                            <p  class='text-xs slate-gray-text'>Creative Agency</p>
                         </div>
                     </td>
                     <td class='py-3 px-2'>
-                        <span>
-
-                        </span>
-                        <p class='font-bold'>vita@mail.com</p>
+                        <div class='flex flex-row justify-start items-center'>
+                            <span class='bg-blue-100 rounded-md px-1 py-1 mr-2'>
+                                <svg width='12' height='13' viewBox='0 0 16 13' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                    <path fill-rule='evenodd' clip-rule='evenodd' d='M2.02209 0.609985H13.9779C15.0929 0.609985 16 1.56898 16 2.74769V10.8623C16 12.041 15.0929 13 13.9779 13H11.7391V11.6212H13.9779C14.3737 11.6212 14.6957 11.2808 14.6957 10.8623V2.88723L8.3987 8.02971C8.2813 8.12559 8.14061 8.17348 8 8.17348C7.85939 8.17348 7.7187 8.12559 7.6013 8.02971L1.30435 2.88723V10.8624C1.30435 11.2808 1.62635 11.6212 2.02209 11.6212H10.3478V13H2.02209C0.90713 13 0 12.041 0 10.8623V2.74769C0 1.56898 0.90713 0.609985 2.02209 0.609985ZM8 6.61282L13.662 1.98891H2.338L8 6.61282Z' fill='#1D1D1B'/>
+                                </svg>   
+                            </span>
+                            <p class='font-bold'>vita@mail.com</p>
+                        </div>
                     </td>
                     <td class='py-3 px-2'>
-                        <span class='text-md text-yellow-500 font-semibold'>
+                        <span class='text-md font-opensans text-slate-orange font-bold'>
                             &dollar;
                             650,036.45
                         </span>
                     </td>
                     <td class='py-3 px-2'>
-                        <div class='flex flex-row justify-center py-1 rounded items-center bg-green-100'>
-                            <span class='font-semibold text-green-500 text-md'>Sécure</span>
+                        <div class='flex flex-row justify-center py-2 rounded-md items-center bg-green-100'>
+                            <span class='font-semibold text-green-500 text-xs font-opensans'>Sécure</span>
                         </div>
                     </td>
                     <td class='py-3 px-2'>
@@ -60,31 +82,43 @@
                     </td>
                 </tr>
                 <tr class='border-b border-blue-100'>
-                    <td class='py-3 px-4'><input type='checkbox' class='rounded border-2 border-blue-200' /></td>
+                    <td class='py-3 px-4'>
+                        <div class='checkbox-container'>
+                            <input type='checkbox' class='opacity-0 absolute h-4 w-4 rounded border-2 border-blue-200' />
+                            <div class='bg-white border-2 rounded cursor-pointer yes border-blue-200 w-4 h-4 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-yellow-500'>
+                                <div class='w-2 h-2 bg-yellow-500 yes-checkmark rounded-xs'></div>
+                            </div>
+                        </div>
+                    </td>
                     <td class='py-3 px-6 font-bold text-md'>#INV-0001234</td>
-                    <td class='py-3 px-6'>June 1, 2020, 08:22 AM</td>
-                    <td class='py-3 px-1 flex flex-row space-x-2 justify-between items-center'>
-                        <span class='w-10 h-10 rounded-md block bg-blue-400'></span>
+                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
+                    <td class='py-3 px-1 flex flex-row space-x-5 justify-start items-center'>
+                        <span class='w-10 h-10 rounded-xl block bg-slate-gray'></span>
                         <div  class='flex flex-col justify-start items-start space-y-1'>
-                            <h2 class='font-bold text-md'>Nella Vita</h2>
-                            <p  class='text-xs'>Creative Agency</p>
+                            <h2 class='font-bold text-md'>Johnny Ahmad</h2>
+                            <p  class='text-xs text-slate-gray'>Creative Agency</p>
                         </div>
                     </td>
                     <td class='py-3 px-2'>
-                        <span>
-
-                        </span>
-                        <p class='font-bold'>vita@mail.com</p>
+                        <div class='flex flex-row justify-start items-center'>
+                            <span class='bg-blue-100 rounded-md px-1 py-1 mr-2'>
+                                <svg width='12' height='13' viewBox='0 0 16 13' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                    <path fill-rule='evenodd' clip-rule='evenodd' d='M2.02209 0.609985H13.9779C15.0929 0.609985 16 1.56898 16 2.74769V10.8623C16 12.041 15.0929 13 13.9779 13H11.7391V11.6212H13.9779C14.3737 11.6212 14.6957 11.2808 14.6957 10.8623V2.88723L8.3987 8.02971C8.2813 8.12559 8.14061 8.17348 8 8.17348C7.85939 8.17348 7.7187 8.12559 7.6013 8.02971L1.30435 2.88723V10.8624C1.30435 11.2808 1.62635 11.6212 2.02209 11.6212H10.3478V13H2.02209C0.90713 13 0 12.041 0 10.8623V2.74769C0 1.56898 0.90713 0.609985 2.02209 0.609985ZM8 6.61282L13.662 1.98891H2.338L8 6.61282Z' fill='#1D1D1B'/>
+                                </svg>   
+                            </span>
+                            <p class='font-bold'>ahmad@mail.com</p>
+                        </div>
                     </td>
                     <td class='py-3 px-2'>
-                        <span class='text-md text-yellow-500 font-semibold'>
+                        <span class='text-md font-opensans text-slate-orange font-bold'>
                             &dollar;
                             650,036.45
                         </span>
                     </td>
                     <td class='py-3 px-2'>
-                        <div class='flex flex-row justify-center py-1 rounded items-center bg-green-100'>
-                            <span class='font-semibold text-green-500 text-md'>Sécure</span>
+                        <div class='flex flex-row justify-center py-2 rounded-md items-center bg-yellow-100'>
+                            <svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='orange' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-help-circle'><circle cx='12' cy='12' r='10'></circle><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'></path><line x1='12' y1='17' x2='12.01' y2='17'></line></svg>
+                            <span class='font-semibold text-slate-orange text-xs'></span>
                         </div>
                     </td>
                     <td class='py-3 px-2'>
@@ -96,31 +130,43 @@
                     </td>
                 </tr>
                 <tr class='border-b border-blue-100'>
-                    <td class='py-3 px-4'><input type='checkbox' class='rounded border-2 border-blue-200' /></td>
+                    <td class='py-3 px-4'>
+                        <div class='checkbox-container'>
+                            <input type='checkbox' class='opacity-0 absolute h-4 w-4 rounded border-2 border-blue-200' />
+                            <div class='bg-white border-2 rounded cursor-pointer yes border-blue-200 w-4 h-4 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-yellow-500'>
+                                <div class='w-2 h-2 bg-yellow-500 yes-checkmark rounded-xs'></div>
+                            </div>
+                        </div>
+                    </td>
                     <td class='py-3 px-6 font-bold text-md'>#INV-0001234</td>
-                    <td class='py-3 px-6'>June 1, 2020, 08:22 AM</td>
-                    <td class='py-3 px-1 flex flex-row space-x-2 justify-between items-center'>
-                        <span class='w-10 h-10 rounded-md block bg-blue-400'></span>
+                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
+                    <td class='py-3 px-1 flex flex-row space-x-5 justify-start items-center'>
+                        <span class='w-10 h-10 rounded-xl block bg-slate-gray'></span>
                         <div  class='flex flex-col justify-start items-start space-y-1'>
-                            <h2 class='font-bold text-md'>Nella Vita</h2>
-                            <p  class='text-xs'>Creative Agency</p>
+                            <h2 class='font-bold text-md'>Samantha W.</h2>
+                            <p  class='text-xs text-slate-gray'>Creative Agency</p>
                         </div>
                     </td>
                     <td class='py-3 px-2'>
-                        <span>
-
-                        </span>
-                        <p class='font-bold'>vita@mail.com</p>
+                        <div class='flex flex-row justify-start items-center'>
+                            <span class='bg-blue-100 rounded-md px-1 py-1 mr-2'>
+                                <svg width='12' height='13' viewBox='0 0 16 13' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                    <path fill-rule='evenodd' clip-rule='evenodd' d='M2.02209 0.609985H13.9779C15.0929 0.609985 16 1.56898 16 2.74769V10.8623C16 12.041 15.0929 13 13.9779 13H11.7391V11.6212H13.9779C14.3737 11.6212 14.6957 11.2808 14.6957 10.8623V2.88723L8.3987 8.02971C8.2813 8.12559 8.14061 8.17348 8 8.17348C7.85939 8.17348 7.7187 8.12559 7.6013 8.02971L1.30435 2.88723V10.8624C1.30435 11.2808 1.62635 11.6212 2.02209 11.6212H10.3478V13H2.02209C0.90713 13 0 12.041 0 10.8623V2.74769C0 1.56898 0.90713 0.609985 2.02209 0.609985ZM8 6.61282L13.662 1.98891H2.338L8 6.61282Z' fill='#1D1D1B'/>
+                                </svg>   
+                            </span>
+                            <p class='font-bold'>mantha@mail.com</p>
+                        </div>
                     </td>
                     <td class='py-3 px-2'>
-                        <span class='text-md text-yellow-500 font-semibold'>
+                        <span class='text-md font-opensans text-slate-orange font-bold'>
                             &dollar;
                             650,036.45
                         </span>
                     </td>
                     <td class='py-3 px-2'>
-                        <div class='flex flex-row justify-center py-1 rounded items-center bg-green-100'>
-                            <span class='font-semibold text-green-500 text-md'>Sécure</span>
+                        <div class='flex flex-row justify-center py-2 space-x-1 rounded items-center bg-red-100'>
+                            <svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='rgba(239, 68, 6, 1)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-help-circle'><circle cx='12' cy='12' r='10'></circle><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'></path><line x1='12' y1='17' x2='12.01' y2='17'></line></svg>
+                            <span class='font-semibold text-red-500 text-xs font-opensans'>Unpaid</span>
                         </div>
                     </td>
                     <td class='py-3 px-2'>
@@ -132,31 +178,42 @@
                     </td>
                 </tr>
                 <tr class='border-b border-blue-100'>
-                    <td class='py-3 px-4'><input type='checkbox' class='rounded border-2 border-blue-200' /></td>
+                    <td class='py-3 px-4'>
+                        <div class='checkbox-container'>
+                            <input type='checkbox' class='opacity-0 absolute h-4 w-4 rounded border-2 border-blue-200' />
+                            <div class='bg-white border-2 rounded cursor-pointer yes border-blue-200 w-4 h-4 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-yellow-500'>
+                                <div class='w-2 h-2 bg-yellow-500 yes-checkmark rounded-xs'></div>
+                            </div>
+                        </div>
+                    </td>
                     <td class='py-3 px-6 font-bold text-md'>#INV-0001234</td>
-                    <td class='py-3 px-6'>June 1, 2020, 08:22 AM</td>
-                    <td class='py-3 px-1 flex flex-row space-x-2 justify-between items-center'>
-                        <span class='w-10 h-10 rounded-md block bg-blue-400'></span>
+                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
+                    <td class='py-3 px-1 flex flex-row space-x-5 justify-start items-center'>
+                        <span class='w-10 h-10 rounded-xl block bg-slate-gray'></span>
                         <div  class='flex flex-col justify-start items-start space-y-1'>
-                            <h2 class='font-bold text-md'>Nella Vita</h2>
-                            <p  class='text-xs'>Creative Agency</p>
+                            <h2 class='font-bold text-md'>Tony Soap</h2>
+                            <p  class='text-xs text-slate-gray'>Creative Agency</p>
                         </div>
                     </td>
                     <td class='py-3 px-2'>
-                        <span>
-
-                        </span>
-                        <p class='font-bold'>vita@mail.com</p>
+                        <div class='flex flex-row justify-start items-center'>
+                            <span class='bg-blue-100 rounded-md px-1 py-1 mr-2'>
+                                <svg width='12' height='13' viewBox='0 0 16 13' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                    <path fill-rule='evenodd' clip-rule='evenodd' d='M2.02209 0.609985H13.9779C15.0929 0.609985 16 1.56898 16 2.74769V10.8623C16 12.041 15.0929 13 13.9779 13H11.7391V11.6212H13.9779C14.3737 11.6212 14.6957 11.2808 14.6957 10.8623V2.88723L8.3987 8.02971C8.2813 8.12559 8.14061 8.17348 8 8.17348C7.85939 8.17348 7.7187 8.12559 7.6013 8.02971L1.30435 2.88723V10.8624C1.30435 11.2808 1.62635 11.6212 2.02209 11.6212H10.3478V13H2.02209C0.90713 13 0 12.041 0 10.8623V2.74769C0 1.56898 0.90713 0.609985 2.02209 0.609985ZM8 6.61282L13.662 1.98891H2.338L8 6.61282Z' fill='#1D1D1B'/>
+                                </svg>   
+                            </span>
+                            <p class='font-bold'>soap@mail.com</p>
+                        </div>
                     </td>
                     <td class='py-3 px-2'>
-                        <span class='text-md text-yellow-500 font-semibold'>
+                        <span class='text-md font-opensans text-slate-orange font-bold'>
                             &dollar;
                             650,036.45
                         </span>
                     </td>
                     <td class='py-3 px-2'>
-                        <div class='flex flex-row justify-center py-1 rounded items-center bg-green-100'>
-                            <span class='font-semibold text-green-500 text-md'>Sécure</span>
+                        <div class='flex flex-row justify-center py-2 space-x-1 rounded-md items-center bg-green-100'>                           
+                            <span class='font-semibold text-green-500 text-xs font-opensans'>Completed</span>
                         </div>
                     </td>
                     <td class='py-3 px-2'>
@@ -168,31 +225,42 @@
                     </td>
                 </tr>
                 <tr class='border-b border-blue-100'>
-                    <td class='py-3 px-4'><input type='checkbox' class='rounded border-2 border-blue-200' /></td>
+                    <td class='py-3 px-4'>
+                        <div class='checkbox-container'>
+                            <input type='checkbox' class='opacity-0 absolute h-4 w-4 rounded border-2 border-blue-200' />
+                            <div class='bg-white border-2 rounded cursor-pointer yes border-blue-200 w-4 h-4 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-yellow-500'>
+                                <div class='w-2 h-2 bg-yellow-500 yes-checkmark rounded-xs'></div>
+                            </div>
+                        </div>
+                    </td>
                     <td class='py-3 px-6 font-bold text-md'>#INV-0001234</td>
-                    <td class='py-3 px-6'>June 1, 2020, 08:22 AM</td>
-                    <td class='py-3 px-1 flex flex-row space-x-2 justify-between items-center'>
-                        <span class='w-10 h-10 rounded-md block bg-blue-400'></span>
+                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
+                    <td class='py-3 px-1 flex flex-row space-x-5 justify-start items-center'>
+                        <span class='w-10 h-10 rounded-xl block bg-slate-gray'></span>
                         <div  class='flex flex-col justify-start items-start space-y-1'>
-                            <h2 class='font-bold text-md'>Nella Vita</h2>
-                            <p  class='text-xs'>Creative Agency</p>
+                            <h2 class='font-bold text-md'>Karen Hope</h2>
+                            <p  class='text-xs text-slate-gray'>Creative Agency</p>
+                        </div>
+                    </td>
+                    <td class='py-3 px-2 space-x-2'>
+                        <div class='flex flex-row justify-start items-center'>
+                            <span class='bg-blue-100 rounded-md px-1 py-1 mr-2'>
+                                <svg width='12' height='13' viewBox='0 0 16 13' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                    <path fill-rule='evenodd' clip-rule='evenodd' d='M2.02209 0.609985H13.9779C15.0929 0.609985 16 1.56898 16 2.74769V10.8623C16 12.041 15.0929 13 13.9779 13H11.7391V11.6212H13.9779C14.3737 11.6212 14.6957 11.2808 14.6957 10.8623V2.88723L8.3987 8.02971C8.2813 8.12559 8.14061 8.17348 8 8.17348C7.85939 8.17348 7.7187 8.12559 7.6013 8.02971L1.30435 2.88723V10.8624C1.30435 11.2808 1.62635 11.6212 2.02209 11.6212H10.3478V13H2.02209C0.90713 13 0 12.041 0 10.8623V2.74769C0 1.56898 0.90713 0.609985 2.02209 0.609985ZM8 6.61282L13.662 1.98891H2.338L8 6.61282Z' fill='#1D1D1B'/>
+                                </svg>   
+                            </span>
+                            <p class='font-bold'>hope@mail.com</p>
                         </div>
                     </td>
                     <td class='py-3 px-2'>
-                        <span>
-
-                        </span>
-                        <p class='font-bold'>vita@mail.com</p>
-                    </td>
-                    <td class='py-3 px-2'>
-                        <span class='text-md text-yellow-500 font-semibold'>
+                        <span class='text-md font-opensans text-slate-orange font-bold'>
                             &dollar;
                             650,036.45
                         </span>
                     </td>
                     <td class='py-3 px-2'>
-                        <div class='flex flex-row justify-center py-1 rounded items-center bg-green-100'>
-                            <span class='font-semibold text-green-500 text-md'>Sécure</span>
+                        <div class='flex flex-row justify-center py-1.5 rounded-md items-center bg-green-100'>
+                            <span class='font-semibold text-green-500 text-xs font-opensans'>Completed</span>
                         </div>
                     </td>
                     <td class='py-3 px-2'>
@@ -204,31 +272,42 @@
                     </td>
                 </tr>
                 <tr class='border-b border-blue-100'>
-                    <td class='py-3 px-4'><input type='checkbox' class='rounded border-2 border-blue-200' /></td>
+                    <td class='py-3 px-4'>
+                        <div class='checkbox-container'>
+                            <input type='checkbox' class='opacity-0 absolute h-4 w-4 rounded border-2 border-blue-200' />
+                            <div class='bg-white border-2 rounded cursor-pointer yes border-blue-200 w-4 h-4 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-yellow-500'>
+                                <div class='w-2 h-2 bg-yellow-500 yes-checkmark rounded-xs'></div>
+                            </div>
+                        </div>
+                    </td>
                     <td class='py-3 px-6 font-bold text-md'>#INV-0001234</td>
-                    <td class='py-3 px-6'>June 1, 2020, 08:22 AM</td>
-                    <td class='py-3 px-1 flex flex-row space-x-2 justify-between items-center'>
-                        <span class='w-10 h-10 rounded-md block bg-blue-400'></span>
+                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
+                    <td class='py-3 px-1 flex flex-row space-x-5 justify-start items-center'>
+                        <span class='w-10 h-10 rounded-xl block bg-slate-gray'></span>
                         <div  class='flex flex-col justify-start items-start space-y-1'>
-                            <h2 class='font-bold text-md'>Nella Vita</h2>
-                            <p  class='text-xs'>Creative Agency</p>
+                            <h2 class='font-bold text-md'>Jordan Nico</h2>
+                            <p  class='text-xs text-slate-gray'>Creative Agency</p>
                         </div>
                     </td>
                     <td class='py-3 px-2'>
-                        <span>
-
-                        </span>
-                        <p class='font-bold'>vita@mail.com</p>
+                        <div class='flex flex-row justify-start items-center'>
+                            <span class='bg-blue-100 rounded-md px-1 py-1 mr-2'>
+                                <svg width='12' height='13' viewBox='0 0 16 13' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                    <path fill-rule='evenodd' clip-rule='evenodd' d='M2.02209 0.609985H13.9779C15.0929 0.609985 16 1.56898 16 2.74769V10.8623C16 12.041 15.0929 13 13.9779 13H11.7391V11.6212H13.9779C14.3737 11.6212 14.6957 11.2808 14.6957 10.8623V2.88723L8.3987 8.02971C8.2813 8.12559 8.14061 8.17348 8 8.17348C7.85939 8.17348 7.7187 8.12559 7.6013 8.02971L1.30435 2.88723V10.8624C1.30435 11.2808 1.62635 11.6212 2.02209 11.6212H10.3478V13H2.02209C0.90713 13 0 12.041 0 10.8623V2.74769C0 1.56898 0.90713 0.609985 2.02209 0.609985ZM8 6.61282L13.662 1.98891H2.338L8 6.61282Z' fill='#1D1D1B'/>
+                                </svg>   
+                            </span>
+                            <p class='font-bold'>jordan@mail.com</p>
+                        </div>
                     </td>
                     <td class='py-3 px-2'>
-                        <span class='text-md text-yellow-500 font-semibold'>
+                        <span class='text-md font-opensans text-slate-orange font-bold'>
                             &dollar;
                             650,036.45
                         </span>
                     </td>
                     <td class='py-3 px-2'>
-                        <div class='flex flex-row justify-center py-1 rounded items-center bg-green-100'>
-                            <span class='font-semibold text-green-500 text-md'>Sécure</span>
+                        <div class='flex flex-row justify-center py-1.5 rounded-md items-center bg-green-100'>
+                            <span class='font-semibold text-green-500 text-xs font-opensans'>Completed</span>
                         </div>
                     </td>
                     <td class='py-3 px-2'>
@@ -240,31 +319,43 @@
                     </td>
                 </tr>
                 <tr class='border-b border-blue-100'>
-                    <td class='py-3 px-4'><input type='checkbox' class='rounded border-2 border-blue-200' /></td>
+                    <td class='py-3 px-4'>
+                        <div class='checkbox-container'>
+                            <input type='checkbox' class='opacity-0 absolute h-4 w-4 rounded border-2 border-blue-200' />
+                            <div class='bg-white border-2 rounded cursor-pointer yes border-blue-200 w-4 h-4 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-yellow-500'>
+                                <div class='w-2 h-2 bg-yellow-500 yes-checkmark rounded-xs'></div>
+                            </div>
+                        </div>
+                    </td>
                     <td class='py-3 px-6 font-bold text-md'>#INV-0001234</td>
-                    <td class='py-3 px-6'>June 1, 2020, 08:22 AM</td>
-                    <td class='py-3 px-1 flex flex-row space-x-2 justify-between items-center'>
-                        <span class='w-10 h-10 rounded-md block bg-blue-400'></span>
+                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
+                    <td class='py-3 px-1 flex flex-row space-x-5 justify-start items-center'>
+                        <span class='w-10 h-10 rounded-xl block bg-slate-gray'></span>
                         <div  class='flex flex-col justify-start items-start space-y-1'>
-                            <h2 class='font-bold text-md'>Nella Vita</h2>
-                            <p  class='text-xs'>Creative Agency</p>
+                            <h2 class='font-bold text-md'>Nadila Adja</h2>
+                            <p  class='text-xs text-slate-gray'>Creative Agency</p>
                         </div>
                     </td>
                     <td class='py-3 px-2'>
-                        <span>
-
-                        </span>
-                        <p class='font-bold'>vita@mail.com</p>
+                        <div class='flex flex-row justify-start items-center'>
+                            <span class='bg-blue-100 rounded-md px-1 py-1 mr-2'>
+                                <svg width='12' height='13' viewBox='0 0 16 13' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                    <path fill-rule='evenodd' clip-rule='evenodd' d='M2.02209 0.609985H13.9779C15.0929 0.609985 16 1.56898 16 2.74769V10.8623C16 12.041 15.0929 13 13.9779 13H11.7391V11.6212H13.9779C14.3737 11.6212 14.6957 11.2808 14.6957 10.8623V2.88723L8.3987 8.02971C8.2813 8.12559 8.14061 8.17348 8 8.17348C7.85939 8.17348 7.7187 8.12559 7.6013 8.02971L1.30435 2.88723V10.8624C1.30435 11.2808 1.62635 11.6212 2.02209 11.6212H10.3478V13H2.02209C0.90713 13 0 12.041 0 10.8623V2.74769C0 1.56898 0.90713 0.609985 2.02209 0.609985ZM8 6.61282L13.662 1.98891H2.338L8 6.61282Z' fill='#1D1D1B'/>
+                                </svg>   
+                            </span>
+                            <p class='font-bold'>adja@mail.com</p>
+                        </div>
                     </td>
                     <td class='py-3 px-2'>
-                        <span class='text-md text-yellow-500 font-semibold'>
+                        <span class='text-md font-opensans text-slate-orange font-bold'>
                             &dollar;
                             650,036.45
                         </span>
                     </td>
                     <td class='py-3 px-2'>
-                        <div class='flex flex-row justify-center py-1 rounded items-center bg-green-100'>
-                            <span class='font-semibold text-green-500 text-md'>Sécure</span>
+                        <div class='flex flex-row justify-center py-2 space-x-1 rounded items-center bg-red-100'>
+                            <svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='rgba(239, 68, 6, 1)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-help-circle'><circle cx='12' cy='12' r='10'></circle><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'></path><line x1='12' y1='17' x2='12.01' y2='17'></line></svg>
+                            <span class='font-semibold text-red-500 text-xs font-opensans'>Unpaid</span>
                         </div>
                     </td>
                     <td class='py-3 px-2'>
@@ -280,18 +371,18 @@
         <div class='py-5 flex flex-row justify-center items-center'>
             <ul class='flex flex-row justify-center items-center space-x-5'>
                 <li class='flex flex-row justify-center items-center'>
-                    <button class='flex flex-row justify-center items-center rounded-xl w-9 h-9 border border-yellow-500 bg-yellow-500 hover:bg-yellow-400'>
-                        <span class='text-white font-bold'>1</span>
+                    <button class='flex flex-row justify-center items-center rounded-2xl w-9 h-9 pagination-button border-slate-orange bg-slate-orange'>
+                        <span class='text-white font-bold text-xs'>1</span>
                     </button>
                 </li>
                 <li class='flex flex-row justify-center items-center'>
-                    <button class='flex flex-row justify-center items-center rounded-xl w-9 h-9 border border-blue-500 bg-white hover:border-yellow-500 hover:bg-yellow-500 text-blue-400 hover:text-white'>
-                        <span class='font-semibold text-md'>2</span>
+                    <button class='flex flex-row justify-center items-center rounded-2xl w-9 h-9 border-2 border-slate-gray pagination-button  bg-white text-blue-400'>
+                        <span class='font-semibold text-slate-gray text-xs'>2</span>
                     </button>
                 </li>
                 <li class='flex flex-row justify-center items-center'>
-                    <button class='flex flex-row justify-center items-center rounded-xl w-9 h-9 border border-blue-500 bg-white hover:border-yellow-500 hover:bg-yellow-500 text-blue-400 hover:text-white'>
-                        <span class='font-semibold text-md'>3</span>
+                    <button class='flex flex-row justify-center items-center rounded-2xl w-9 h-9 border-2 border-slate-gray pagination-button bg-white text-blue-400'>
+                        <span class='font-semibold text-slate-gray text-xs'>3</span>
                     </button>
                 </li>
             </ul>
