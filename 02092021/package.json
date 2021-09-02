@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test":         "echo \"Error: no test specified\" && exit 1",
-    "buildone":    "npx postcss css/page.one.css -o build/page.one.css"
+    "test":        "echo \"Error: no test specified\" && exit 1",
+    "buildone":    "npx postcss css/page.one.scss -o build/page.one.css --watch",
+    "buildtwo":    "npx postcss css/page.two.scss -o build/page.two.css --watch"
   },
   "keywords": [],
   "author": "",
