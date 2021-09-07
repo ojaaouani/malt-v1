@@ -11,8 +11,8 @@
     <title>Page #1</title>
 </head>
 <body>
-    <div class='w-screen min-h-screen flex flex-col justify-center items-center bg-gray-800'>
-    <div class='w-full max-w-5xl mx-auto table-auto rounded-xl border border-white shadow-md'>
+    <div class='w-screen min-h-screen flex flex-col justify-center items-center bg-gray-800 px-4'>
+    <div class='w-full mx-auto table-auto rounded-xl border border-white shadow-md'>
         <table class='w-full table-auto bg-gray-700 rounded-t-xl'>
             <thead>
                 <tr class='border-b border-blue-100'>
@@ -25,11 +25,13 @@
                         </div>
                     </th>
                     <th class='py-3 px-6 text-left text-white'>Localisation <br />dispositif</th>
-                    <th class='py-3 px-6 text-left text-white'>Dernière MAJ</th>
-                    <th class='py-3 px-1 text-left text-white'>Code MAC</th>
+                    <th class='py-3 px-6 text-left text-white'>Code MAC</th>
+                    <th class='py-3 px-1 text-left text-white'>Alert</th>
+                    <th class='py-3 px-2 text-left text-white'>PM2,5</th>
                     <th class='py-3 px-2 text-left text-white'>TCOV</th>
                     <th class='py-3 px-2 text-left text-white'>CO2</th>
-                    <th class='py-3 px-6 text-left text-white'>Alerte</th>
+                    <th class='py-3 px-6 text-left text-white'>Température et humidité</th>
+                    <th class='py-3 px-6 text-left text-white'>Dernière MAJ</th>
                     <td class='py-3 px-6 text-left text-white'></td>
                 </tr>
             </thead>
@@ -43,8 +45,8 @@
                             </div>
                         </div>
                     </td>
+                    <td class='py-3 px-6 font-bold text-md text-white'>Grenobe, France</td>
                     <td class='py-3 px-6 font-bold text-md text-white'>#INV-0001234</td>
-                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
                     <td class='py-3 px-1 flex flex-row space-x-5 justify-start items-center'>
                         <span class='w-10 h-10 rounded-xl block bg-white'></span>
                         <div  class='flex flex-col justify-start items-start space-y-1'>
@@ -69,10 +71,16 @@
                         </span>
                     </td>
                     <td class='py-3 px-2'>
+                        <span class='text-md font-opensans text-slate-orange font-bold'>
+                           30°C
+                        </span>
+                    </td>
+                    <td class='py-3 px-2'>
                         <div class='flex flex-row justify-center py-2 rounded-md items-center bg-green-100'>
                             <span class='font-semibold text-green-500 text-xs font-opensans'>Sécure</span>
                         </div>
                     </td>
+                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
                     <td class='py-3 px-2'>
                         <button type='button flex flex-row justify-center items-center'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='#FFF'>
@@ -90,8 +98,8 @@
                             </div>
                         </div>
                     </td>
+                    <td class='py-3 px-6 font-bold text-md text-white'>Grenobe, France</td>
                     <td class='py-3 px-6 font-bold text-md text-white'>#INV-0001234</td>
-                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
                     <td class='py-3 px-1 flex flex-row space-x-5 justify-start items-center'>
                         <span class='w-10 h-10 rounded-xl block bg-white'></span>
                         <div  class='flex flex-col justify-start items-start space-y-1'>
@@ -116,11 +124,17 @@
                         </span>
                     </td>
                     <td class='py-3 px-2'>
+                        <span class='text-md font-opensans text-slate-orange font-bold'>
+                           30°C
+                        </span>
+                    </td>
+                    <td class='py-3 px-2'>
                         <div class='flex flex-row justify-center py-2 rounded-md items-center bg-yellow-100'>
                             <svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='orange' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-help-circle'><circle cx='12' cy='12' r='10'></circle><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'></path><line x1='12' y1='17' x2='12.01' y2='17'></line></svg>
                             <span class='font-semibold text-slate-orange text-xs'></span>
                         </div>
                     </td>
+                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
                     <td class='py-3 px-2'>
                         <button type='button flex flex-row justify-center items-center'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='#FFF'>
@@ -138,8 +152,8 @@
                             </div>
                         </div>
                     </td>
+                    <td class='py-3 px-6 font-bold text-md text-white'>Grenobe, France</td>
                     <td class='py-3 px-6 font-bold text-md text-white'>#INV-0001234</td>
-                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
                     <td class='py-3 px-1 flex flex-row space-x-5 justify-start items-center'>
                         <span class='w-10 h-10 rounded-xl block bg-white'></span>
                         <div  class='flex flex-col justify-start items-start space-y-1'>
@@ -164,11 +178,17 @@
                         </span>
                     </td>
                     <td class='py-3 px-2'>
+                        <span class='text-md font-opensans text-slate-orange font-bold'>
+                           30°C
+                        </span>
+                    </td>
+                    <td class='py-3 px-2'>
                         <div class='flex flex-row justify-center py-2 space-x-1 rounded items-center bg-red-100'>
                             <svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='rgba(239, 68, 6, 1)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-help-circle'><circle cx='12' cy='12' r='10'></circle><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'></path><line x1='12' y1='17' x2='12.01' y2='17'></line></svg>
                             <span class='font-semibold text-red-500 text-xs font-opensans'>Unpaid</span>
                         </div>
                     </td>
+                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
                     <td class='py-3 px-2'>
                         <button type='button flex flex-row justify-center items-center'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='#FFF'>
@@ -186,8 +206,8 @@
                             </div>
                         </div>
                     </td>
+                    <td class='py-3 px-6 font-bold text-md text-white'>Grenobe, France</td>
                     <td class='py-3 px-6 font-bold text-md text-white'>#INV-0001234</td>
-                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
                     <td class='py-3 px-1 flex flex-row space-x-5 justify-start items-center'>
                         <span class='w-10 h-10 rounded-xl block bg-white'></span>
                         <div  class='flex flex-col justify-start items-start space-y-1'>
@@ -212,10 +232,16 @@
                         </span>
                     </td>
                     <td class='py-3 px-2'>
+                        <span class='text-md font-opensans text-slate-orange font-bold'>
+                           30°C
+                        </span>
+                    </td>
+                    <td class='py-3 px-2'>
                         <div class='flex flex-row justify-center py-2 space-x-1 rounded-md items-center bg-green-100'>                           
                             <span class='font-semibold text-green-500 text-xs font-opensans'>Completed</span>
                         </div>
                     </td>
+                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
                     <td class='py-3 px-2'>
                         <button type='button flex flex-row justify-center items-center'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='#FFF'>
@@ -233,8 +259,8 @@
                             </div>
                         </div>
                     </td>
+                    <td class='py-3 px-6 font-bold text-md text-white'>Grenobe, France</td>
                     <td class='py-3 px-6 font-bold text-md text-white'>#INV-0001234</td>
-                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
                     <td class='py-3 px-1 flex flex-row space-x-5 justify-start items-center'>
                         <span class='w-10 h-10 rounded-xl block bg-white'></span>
                         <div  class='flex flex-col justify-start items-start space-y-1'>
@@ -259,10 +285,16 @@
                         </span>
                     </td>
                     <td class='py-3 px-2'>
+                        <span class='text-md font-opensans text-slate-orange font-bold'>
+                           30°C
+                        </span>
+                    </td>
+                    <td class='py-3 px-2'>
                         <div class='flex flex-row justify-center py-1.5 rounded-md items-center bg-green-100'>
                             <span class='font-semibold text-green-500 text-xs font-opensans'>Completed</span>
                         </div>
                     </td>
+                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
                     <td class='py-3 px-2'>
                         <button type='button flex flex-row justify-center items-center'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='#FFF'>
@@ -280,8 +312,8 @@
                             </div>
                         </div>
                     </td>
+                    <td class='py-3 px-6 font-bold text-md text-white'>Grenobe, France</td>
                     <td class='py-3 px-6 font-bold text-md text-white'>#INV-0001234</td>
-                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
                     <td class='py-3 px-1 flex flex-row space-x-5 justify-start items-center'>
                         <span class='w-10 h-10 rounded-xl block bg-white'></span>
                         <div  class='flex flex-col justify-start items-start space-y-1'>
@@ -306,10 +338,16 @@
                         </span>
                     </td>
                     <td class='py-3 px-2'>
+                        <span class='text-md font-opensans text-slate-orange font-bold'>
+                           30°C
+                        </span>
+                    </td>
+                    <td class='py-3 px-2'>
                         <div class='flex flex-row justify-center py-1.5 rounded-md items-center bg-green-100'>
                             <span class='font-semibold text-green-500 text-xs font-opensans'>Completed</span>
                         </div>
                     </td>
+                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
                     <td class='py-3 px-2'>
                         <button type='button flex flex-row justify-center items-center'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='#FFF'>
@@ -327,8 +365,8 @@
                             </div>
                         </div>
                     </td>
+                    <td class='py-3 px-6 font-bold text-md text-white'>Grenobe, France</td>
                     <td class='py-3 px-6 font-bold text-md text-white'>#INV-0001234</td>
-                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
                     <td class='py-3 px-1 flex flex-row space-x-5 justify-start items-center'>
                         <span class='w-10 h-10 rounded-xl block bg-white'></span>
                         <div  class='flex flex-col justify-start items-start space-y-1'>
@@ -353,11 +391,17 @@
                         </span>
                     </td>
                     <td class='py-3 px-2'>
+                        <span class='text-md font-opensans text-slate-orange font-bold'>
+                           30°C
+                        </span>
+                    </td>
+                    <td class='py-3 px-2'>
                         <div class='flex flex-row justify-center py-2 space-x-1 rounded items-center bg-red-100'>
                             <svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='rgba(239, 68, 6, 1)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-help-circle'><circle cx='12' cy='12' r='10'></circle><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'></path><line x1='12' y1='17' x2='12.01' y2='17'></line></svg>
                             <span class='font-semibold text-red-500 text-xs font-opensans'>Unpaid</span>
                         </div>
                     </td>
+                    <td class='py-3 px-6 text-slate-gray font-opensans text-size-medium'>June 1, 2020, 08:22 AM</td>
                     <td class='py-3 px-2'>
                         <button type='button flex flex-row justify-center items-center'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='#FFF'>
