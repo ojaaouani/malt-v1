@@ -16,12 +16,10 @@
         <div class="grid grid-cols-6 grid-rows-4 bg-white h-full w-full transform -skew-y-12 opacity-50">
             <div class="bg-purple-700"></div>
             <div class="bg-blue-700"></div>
-            <div class="bg-pink-700"></div>
-            <div class="bg-green-700"></div>
         </div>
     </div>
     <div class="w-full flex flex-col justify-start items-start mx-auto container min-h-screen bg-transparent">
-        <div class="w-full flex flex-row flex-wrap lg:flex-nowrap justify-between items-center py-6">
+            <div class="w-full flex flex-row flex-wrap lg:flex-nowrap justify-between items-center py-6">
             <div class="w-full">
                 <img src="./assets/logo.png"
                     width="50"
@@ -29,8 +27,10 @@
             </div>
             <ul class="w-full flex flex-row justify-center items-center space-x-6 space-x-4">
                 <li class="flex flex flex-col justify-center items-center">
-                    <h2 class="text-gray-500 font-semibold text-size-middle">Accueil</h2>
-                    <span class="w-full h-0.5 bg-transparent rounded-md"></span>
+                    <a href="./page.one.html">
+                        <h2 class="text-gray-500 font-semibold text-size-middle">Accueil</h2>
+                        <span class="w-full h-0.5 bg-transparent rounded-md"></span>
+                    </a>
                 </li>
                 <li class="flex flex flex-col justify-center items-start py-2">
                     <a href="./page.three.html">
@@ -54,10 +54,14 @@
                 </li>
             </ul>
         </div>
+        <div class="text-md small-title-b text-center mx-auto font-bold mb-3 items-center flex flex-row ">
+            <img src="./assets/france.png" width="20" height="20" class="relative -top-2.5 -right-4" />
+            <span>Logiciel 100% français, hébergement des données en France</span>
+        </div>
         <div class="w-full flex flex-col lg:flex-row justify-center items-center pt-20 container mx-auto">
-            <div class="w-2/4 flex flex-col justify-start items-start w-full space-y-6 max-w-md px-5">
-                <h1 class="big-title">Un air <span class="text-blue-500">contrôlé</span> pour tous</h1>
-                <p class="text-gray-500 description-text">Une gestion optimale de la qualité de l'air passe nécessairement par une surveillance de l’air ambiant. Nous vous fournissons les informations sur la qualité de l’air existante et vous oriente vers les décisions à prendre pour corriger les éventuelles risques</p>
+            <div class="w-2/4 flex flex-col justify-start items-start w-full max-w-md px-5">
+                <h1 class="big-title mb-6">Un air <span class="text-blue-500">contrôlé</span> pour tous</h1>
+                <p class="text-gray-500 mb-6 description-text">Une gestion optimale de la qualité de l'air passe nécessairement par une surveillance de l’air ambiant. Nous vous fournissons les informations sur la qualité de l’air existante et vous oriente vers les décisions à prendre pour corriger les éventuelles risques</p>
                 <div class="w-full flex flex-row justif-start items-start space-x-2">
                     <button type="button" class="flex flex flex-col justify-center items-center space-y-2 py-2 bg-blue-500 rounded cursor-pointer px-3">
                         <h2 class="font-semibold text-size-middle text-white">Créer un compte</h2>
