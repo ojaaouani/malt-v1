@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'                                                 />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel='stylesheet' href='page.one.css'                                                                            />
+    <link rel='preconnect' href='https://fonts.googleapis.com'                                                            />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin                                                   />
+    <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap' rel='stylesheet'           />
+    <link href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,800&family=Roboto+Condensed:wght@300;400;700&display=swap' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Page #1</title>
+</head>
+<body class="min-h-screen wrapper">
+    <div class="absolute bg-black w-screen h-screen flex flex-col justify-start items-start bg bg-white">
+        <div class="grid grid-cols-6 grid-rows-4 bg-white h-full w-full transform -skew-y-12 opacity-50">
+            <div class="bg-purple-700"></div>
+            <div class="bg-blue-700"></div>
+            <div class="bg-pink-700"></div>
+            <div class="bg-green-700"></div>
+        </div>
+    </div>
+    <div class="w-full flex flex-col justify-start items-start mx-auto container min-h-screen bg-transparent">
+        <div class="w-full flex flex-row justify-between items-center py-6">
+            <div></div>
+            <ul class="w-full flex flex-row justify-center items-center space-x-6 space-x-4">
+                <li class="flex flex flex-col justify-center items-center">
+                    <h2 class="text-gray-500 font-semibold text-size-middle">Accueil</h2>
+                    <span class="w-full h-0.5 bg-transparent rounded-md"></span>
+                </li>
+                <li class="flex flex flex-col justify-center items-start py-2">
+                    <a href="./page.three.html">
+                        <h2 class="text-gray-500 font-semibold text-size-middle">Tarifs</h2>
+                        <span class="w-full h-0.5 bg-transparent rounded"></span>
+                    </a>
+                </li>
+                <li class="flex flex flex-col justify-center items-start py-2">
+                    <a href="./page.two.html">
+                        <h2 class="text-gray-500 font-semibold text-size-middle">FAQ</h2>
+                        <span class="w-full h-0.5 bg-transparent rounded"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="w-full flex flex-row justify-center items-center space-x-6 space-x-4">
+                <li class="flex flex flex-col justify-center border-2 border-blue-500 rounded-md px-3 items-center cursor-pointer space-y-2 py-1.5">
+                    <h2 class="text-gray-500  font-semibold text-size-middle">Connexion</h2>
+                </li>
+                <li class="flex flex flex-col justify-center items-center space-y-2 py-1.5 bg-blue-500 rounded-md cursor-pointer px-3">
+                    <h2 class="font-semibold text-size-middle text-white">Créer un compte</h2>
+                </li>
+            </ul>
+        </div>
+        <div class="w-full flex flex-col lg:flex-row justify-center items-center pt-20 container mx-auto">
+            <div class="w-2/4 flex flex-col justify-start items-start w-full space-y-6 max-w-md px-5">
+                <h1 class="big-title">Un air <span class="text-blue-500">contrôlé</span> pour tous</h1>
+                <p class="text-gray-500 description-text">Une gestion optimale de la qualité de l'air passe nécessairement par une surveillance de l’air ambiant. Nous vous fournissons les informations sur la qualité de l’air existante et vous oriente vers les décisions à prendre pour corriger les éventuelles risques</p>
+                <div class="w-full flex flex-row justif-start items-start space-x-2">
+                    <button type="button" class="flex flex flex-col justify-center items-center space-y-2 py-2 bg-blue-500 rounded cursor-pointer px-3">
+                        <h2 class="font-semibold text-size-middle text-white">Créer un compte</h2>
+                    </button>
+                </div>
+            </div>
+            <div class="w-2/4 flex flex-col justify-center items-center w-full space-y-6 max-w-2xl">
+                <img src="./assets/device.png" 
+                    height="200"
+                    width="600"
+                    class="-mt-20"
+                />
+            </div>
+        </div>
+        <div class="w-full container mx-auto flex flex-col justify-start items-start pt-20 space-y-6 px-24 max-w-7xl">
+            <h1 class="big-title-m">Comment ça marche ?</h1>
+            <p class="description-text-m">Nos capteurs permettent d'effectuer la mesure, de plusieurs polluants de la qualité de l'air intérieur et des indicateurs de confort comme : le CO2, 
+                les formaldéhydes, les COVs, les particules fines, la température et l'humidité relative. Ainsi, grâce aux capteurs Analyse-r, la plupart des informations 
+                permettent une surveillance optimale de la qualité d'air et une action rapide pour corriger des éventuels dépassements.</p>
+            <div class="w-full grid grid-cols-3 gap-x-5 ustify-between items-center">
+                <div class="flex flex-row justify-start items-start space-x-3">
+                    <h1 class="bigger-title font-bold">01</h1>
+                    <div class="flex flex-col justify-start items-start space-y-1">
+                        <h2 class="small-title-d">Détecter</h2>
+                        <p class="description-text-s">
+                            En temps réel, les informations remontent sur le moniteur de contrôle.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-start items-center space-x-3">
+                    <h1 class="bigger-title font-bold">02</h1>
+                    <div class="flex flex-col justify-start items-start space-y-1">
+                        <h2 class="small-title-d">Corriger</h2>
+                        <p class="description-text-s">
+                            Une action rapide et corrective peut être effectuée rapidement afin de minimiser les risques.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-start items-center space-x-3">
+                    <h1 class="bigger-title font-bold">03</h1>
+                    <div class="flex flex-col justify-start items-start space-y-1">
+                        <h2 class="small-title-d">S'améliorer</h2>
+                        <p class="description-text-s">
+                            Réalisation d'un bilan des pratiques par les équipes afin de concevoir un plan d'actions de prévention.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex flex-col lg:flex-row justify-around items-center pt-20 container mx-auto max-w-7xl">
+            <div class="w-2/3 flex flex-col justify-start items-start max-w-md">
+                <h1 class="text-purple-400 font-medium small-title">Une plateforme unifié</h1>
+                <div class="flex flex-col justify-start items-start space-y-3">
+                    <h1 class="medium-title">Une suite entièrement intégrée de produits de solutions</h1>
+                    <p class="description-text">Le moniteur est composé de multiples capteurs permettant d'évaluer la qualité de l'air dans un environnement clos en temps réel
+                    La plupart des informations permettent une surveillance optimale de la qualité d'air et une action rapide pour corriger des éventuels dépassements.</p>
+                </div>
+            </div>
+            <div class="w-1/3 flex flex-col justify-center items-center max-w-lg">
+                <img src="./assets/floor.png" 
+                    height="200"
+                    width="360"
+                    class=""
+                />
+            </div>
+        </div>
+        <div class="w-full flex flex-col lg:flex-row justify-around items-center pt-20 container mx-auto max-w-7xl">
+            <div class="w-1/3 flex flex-col justify-center items-center">
+                <img src="./assets/floor.png" 
+                    height="200"
+                    width="360"
+                    class=""
+                />
+            </div>
+            <div class="w-2/3 flex flex-col justify-start items-start max-w-md">
+                <h1 class="text-purple-400 font-medium small-title">Une plateforme unifié</h1>
+                <div class="flex flex-col justify-start items-start space-y-3">
+                    <h1 class="medium-title">Pourquoi surveiller la qualité de l'air intérieur ?</h1>
+                    <p class="description-text">Une mauvaise qualité de l’air intérieur peut favoriser
+                        L’émergences de symptômes comme la toux, l'irritation des
+                        Voies respiratoires ou orl, une baisse de la concentration,
+                        une fatigabilité accrue.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-screen flex-col justify-start items-start bg-blue-600 py-10 space-y-1 px-24 mt-14">
+        <div class="w-full container mx-auto space-y-5">
+            <h1 class="text-white medium-title">Envie de savoir plus ?</h1>
+            <p class="description-text max-w-xs text-white" style="color: #FFFFFF;">
+                Envie de nous poser une question par curiosité ou
+                nous contacter à propos d'un devis. Nous sommes à
+                votre entière disposition.
+            </p>
+            <a href="mailto:contacts@analyse-r.fr" class="flex flex flex-col justify-center max-w-xs items-center space-y-2 py-1.5 border-white border bg-transparent rounded-md cursor-pointer px-3">
+                <h2 class="font-semibold text-size-middle text-white">J'ai d'autres questions</h2>
+            </a>
+        </div>
+    </div>
+    <section class="bg-gray-50">
+        <div class="flex w-full">
+          <div class="w-1/3 flex">
+            <div class="w-1/3 py-1 bg-blue-400"></div>
+            <div class="w-1/3 py-1 bg-blue-500"></div>
+            <div class="w-1/3 py-1 bg-blue-600"></div>
+          </div>
+          <div class="w-1/3 flex">
+            <div class="w-1/3 py-1 bg-blue-400"></div>
+            <div class="w-1/3 py-1 bg-blue-500"></div>
+            <div class="w-1/3 py-1 bg-blue-600"></div>
+          </div>
+          <div class="w-1/3 flex">
+            <div class="w-1/3 py-1 bg-blue-400"></div>
+            <div class="w-1/3 py-1 bg-blue-500"></div>
+            <div class="w-1/3 py-1 bg-blue-600"></div>
+          </div>
+        </div>
+        <div class="container mx-auto px-4">
+          <div class="pt-5">
+            <div class="relative lg:pb-8 flex flex-wrap">
+              <p class="w-full lg:w-auto text-gray-400 text-sm text-center lg:text-left order-last lg:order-first">© 2021. All rights reserved.</p>
+              <div class="lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 mb-6 lg:mb-0 mx-auto"><a class="mr-6 text-sm hover:text-gray-500" href="#">Terms of Service</a><a class="text-sm hover:text-gray-500" href="#">Police Privacy</a></div>
+              <div class="mb-12 lg:mb-0 lg:ml-auto w-full lg:w-auto order-first lg:order-last text-center lg:text-left">
+                <a class="inline-block text-xl font-bold leading-none" href="#">
+                  <img class="inline-block h-12 lg:h-6" src="atis-assets/logo/atis/atis-mono-black.svg" alt="" width="auto">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+</body>
+</html>
