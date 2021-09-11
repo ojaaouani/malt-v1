@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'                                                 />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel='stylesheet' href='./page.two.css'                                                                          />
+    <link rel='preconnect' href='https://fonts.googleapis.com'                                                            />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin                                                   />
+    <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap' rel='stylesheet'           />
+    <link href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,800&family=Roboto+Condensed:wght@300;400;700&display=swap' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Page #2</title>
+</head>
+<body class="bg-gray-100">
+    <div class="w-full flex flex-row justify-center items-center bg-white border-b border-gray-100">
+        <div class="container mx-auto flex flex-row justify-between items-center shadow-xs">
+            <div></div>
+            <div class="flex flex-row justify-end items-center space-x-3">
+                <a href="#" class="h-full px-3 bg-gray-600 py-2">
+                    <span class="text-white font-medium text-size-middle">Mode défilé</span>
+                </a>
+                <a href="#" class="h-full px-3 bg-white py-2">
+                    <span class="text-size-middle">CO2</span>
+                </a>
+                <a href="#" class="h-full px-3 bg-white py-2">
+                    <span class="text-size-middle">PM2,5</span>
+                </a>
+                <a href="#" class="h-full px-3 bg-white py-2">
+                    <span class="text-size-middle">COV</span>
+                </a>
+                <a href="#" class="h-full px-3 bg-white py-2">
+                    <span class="text-size-middle">Température</span>
+                </a>
+                <a href="#" class="h-full px-3 bg-white py-2">
+                    <span class="text-size-middle">Humidité</span>
+                </a>
+                <a href="#" class="px-3 bg-white py-0.5 rounded-lg border-2 border-red-600">
+                    <span class="text-size-middle">Déconnexion</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w-full container mx-auto flex flex-col justify-start items-start pt-5">
+        <div class="border-b w-full border-gray-100 flex flex-row justify-start items-start space-x-4 py-4">
+            <h1 class="text-xl font-extrabold text-gray-500" style="font-family: 'Open Sans'; font-weight: 700;">Dashboard</h1>
+            <button class="flex flex flex-col justify-center border-2 border-blue-500 rounded-md px-3 items-center cursor-pointer space-y-2 py-0.5">
+                <h2 class="text-gray-500 font-semibold text-size-middle">Add new tile</h2>
+            </button>
+            <button class="flex flex flex-col justify-center items-center space-y-2 py-1 bg-blue-500 rounded-md cursor-pointer px-3">
+                <h2 class="font-semibold text-size-middle text-white">Add new device</h2>
+            </button>
+        </div>
+    </div>
+    <div class="w-full container mx-auto flex flex-col lg:flex-row justify-start pb-5 items-start pt-5 space-x-0 space-y-2 lg:space-y-0 lg:space-x-5">
+        <div class="w-full lg:w-1/2 border border-gray-100 flex flex-col justify-start bg-white items-start py-5 px-5">
+            <div class="w-full flex flex-row justify-between items-center border-b border-gray-200 pb-3">
+                <div class="flex flex-col justify-start items-start space-y-1">
+                    <h1 class="medium-a-title font-extrabold">Meeting room</h1>
+                    <span class="small-title-d text-gray-300">Analyse-R Office</span>
+                </div>
+                <div class="flex flex-row justify-center items-center space-x-2">
+                    <span class="text-white px-2 font-bold small-title-d py-1 text-xs bg-gray-500 rounded-lg">Wave</span>
+                    <button type="button" class="flex flex-col justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 20 22" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="w-full flex flex-row justify-center items-center space-y-4 flex-wrap pt-3">
+                <div class="w-52 flex flex-row justify-center items-center space-x-2">
+                    <img src="./assets/003-carbon-dioxide.png"
+                        width="42"
+                    />
+                    <div class="flex flex-col justify-start items-start">
+                        <span class="medium-a-title text-blue-400">7</span>
+                        <span class="small-title-b text-xs">RADON</span>
+                    </div>
+                </div>
+                <div class="w-52 flex flex-row justify-center items-center space-x-2">
+                    <img src="./assets/002-drop.png"
+                        width="42"
+                    />
+                    <div class="flex flex-col justify-start items-start">
+                        <span class="medium-a-title text-blue-400">37%</span>
+                        <span class="small-title-b text-xs">Humidity</span>
+                    </div>
+                </div>
+                <div class="w-52 flex flex-row justify-center items-center space-x-2">
+                    <img src="./assets/001-thermometer.png"
+                        width="42"
+                    />
+                    <div class="flex flex-col justify-start items-start">
+                        <span class="medium-a-title text-blue-400">22°</span>
+                        <span class="small-title-b text-xs">Temperature</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full lg:w-1/2 border border-gray-100 flex flex-col justify-start bg-white items-start py-5 px-5">
+            <div class="w-full flex flex-row justify-between items-center border-b border-gray-200 pb-3">
+                <div class="flex flex-col justify-start items-start space-y-1">
+                    <h1 class="medium-a-title font-extrabold">Salle #02</h1>
+                    <span class="small-title-d text-gray-300">Analyse-R Office</span>
+                </div>
+                <div class="flex flex-row justify-center items-center space-x-2">
+                    <span class="text-white px-2 font-bold small-title-d py-1 text-xs bg-gray-500 rounded-lg">Wave</span>
+                    <button type="button" class="flex flex-col justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 20 22" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="w-full flex flex-row justify-center items-center space-y-4 flex-wrap pt-3">
+                <div class="w-52 flex flex-row justify-center items-center space-x-2">
+                    <img src="./assets/003-carbon-dioxide.png"
+                        width="42"
+                    />
+                    <div class="flex flex-col justify-start items-start">
+                        <span class="medium-a-title text-blue-400">10</span>
+                        <span class="small-title-b text-xs">RADON</span>
+                    </div>
+                </div>
+                <div class="w-52 flex flex-row justify-center items-center space-x-2">
+                    <img src="./assets/002-drop.png"
+                        width="42"
+                    />
+                    <div class="flex flex-col justify-start items-start">
+                        <span class="medium-a-title text-blue-400">47%</span>
+                        <span class="small-title-b text-xs">Humidity</span>
+                    </div>
+                </div>
+                <div class="w-52 flex flex-row justify-center items-center space-x-2">
+                    <img src="./assets/001-thermometer.png"
+                        width="42"
+                    />
+                    <div class="flex flex-col justify-start items-start">
+                        <span class="medium-a-title text-blue-400">23°</span>
+                        <span class="small-title-b text-xs">Temperature</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full container mx-auto flex flex-col lg:flex-row justify-start pb-5 items-start pt-5">
+        <div class="w-full border border-gray-100 flex flex-col justify-start bg-white items-start py-5 px-5">
+            <div class="w-full flex flex-row justify-start space-x-6 items-center border-b border-gray-200 pb-3">
+                <div class="w-full max-w-xs flex flex-col justify-start items-start space-y-1">
+                    <h1 class="medium-a-title font-extrabold">Salle #02</h1>
+                    <span class="small-title-d text-gray-300">Analyse-R Office</span>
+                </div>
+                <div class="px-4 flex flex-row justify-center items-center space-x-2">
+                    <img src="./assets/002-drop.png"
+                        width="26"
+                    />
+                    <div class="flex flex-col justify-start items-start">
+                        <span class="small-title-s text-blue-400">47%</span>
+                        <span class="small-title-s text-xs">Humidity</span>
+                    </div>
+                </div>
+                <div class="w-full flex flex-row justify-end items-center space-x-3">
+                    <a href="#" class="h-full px-3 bg-gray-600 rounded-lg">
+                        <span class="text-white font-medium text-size-middle">48 hours</span>
+                    </a>
+                    <a href="#" class="h-full px-3 bg-white py-2">
+                        <span class="text-size-middle">Week</span>
+                    </a>
+                    <a href="#" class="h-full px-3 bg-white py-2">
+                        <span class="text-size-middle">Month</span>
+                    </a>
+                    <a href="#" class="h-full px-3 bg-white py-2">
+                        <span class="text-size-middle">Year</span>
+                    </a>
+                    <button type="button" class="flex flex-col justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 20 22" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="w-full flex flex-row">
+                <canvas width="1494" height="365" id="chart"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="w-full container mx-auto flex flex-col lg:flex-row justify-start pb-5 items-start pt-5 space-x-4">
+        <div class="w-full lg:w-1/2 border border-gray-100 flex flex-col justify-start bg-white items-start py-5 px-5">
+            <div class="w-full flex flex-row justify-start space-x-6 items-center border-b border-gray-200 pb-3">
+                <div class="w-full max-w-xs flex flex-col justify-start items-start space-y-1">
+                    <h1 class="medium-a-title font-extrabold">Salle #02</h1>
+                    <span class="small-title-d text-gray-300">Analyse-R Office</span>
+                </div>
+                <div class="px-4 flex flex-row justify-center items-center space-x-2">
+                    <img src="./assets/001-thermometer.png"
+                        width="32"
+                    />
+                    <div class="flex flex-col justify-start items-start">
+                        <span class="small-title-s text-blue-400">47%</span>
+                        <span class="small-title-s text-xs">Humidity</span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex flex-row">
+                <canvas width="768" height="365" id="chart_two"></canvas>
+            </div>
+        </div>
+        <div class="w-full lg:w-1/2 border border-gray-100 flex flex-col justify-start bg-white items-start py-5 px-5">
+            <div class="w-full flex flex-row justify-start space-x-6 items-center border-b border-gray-200 pb-3">
+                <div class="w-full max-w-xs flex flex-col justify-start items-start space-y-1">
+                    <h1 class="medium-a-title font-extrabold">Salle #04</h1>
+                    <span class="small-title-d text-gray-300">Analyse-R Office</span>
+                </div>
+                <div class="px-4 flex flex-row justify-center items-center space-x-2">
+                    <img src="./assets/001-thermometer.png"
+                        width="32"
+                    />
+                    <div class="flex flex-col justify-start items-start">
+                        <span class="small-title-s text-blue-400">47%</span>
+                        <span class="small-title-s text-xs">Humidity</span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex flex-row">
+                <canvas width="768" height="365" id="chart_three"></canvas>
+            </div>
+        </div>
+    </div>
+    <script>
+        var ctx = document.getElementById('chart').getContext('2d');
+        var ctx2 = document.getElementById('chart_two').getContext('2d');
+        var ctx3 = document.getElementById('chart_three').getContext('2d');
+
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['12.02', '19.02', '26.02', '05.03', '10.02'],
+                datasets: [{
+                    data: [2, 4, 8, 12, 5, 15, 3, 20, 16, 13],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 3,
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                elements: {
+                    line: {
+                        tension: 0.8
+                    }
+                }
+            }
+        });
+
+        var chart2 = new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: ['12.02', '19.02', '26.02', '05.03', '10.02'],
+                datasets: [{
+                    data: [2, 4, 8, 12, 5, 15, 3, 20, 16, 13],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 3,
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                elements: {
+                    line: {
+                        tension: 0.8
+                    }
+                }
+            }
+        });
+
+        var chart3 = new Chart(ctx3, {
+            type: 'line',
+            data: {
+                labels: ['12.02', '19.02', '26.02', '05.03', '10.02'],
+                datasets: [{
+                    data: [2, 4, 8, 12, 5, 15, 3, 20, 16, 13],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 3,
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                elements: {
+                    line: {
+                        tension: 0.8
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

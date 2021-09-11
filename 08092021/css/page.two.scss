@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body, .wrapper {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar { display: none; }
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.bg {
+    z-index: -10;
+}
+
+.info  {
+    margin-top: 100px;
+}
+.text-size-middle { 
+    font-family: 'Open Sans', Arial;
+    font-size: 0.8rem; 
+}
+
+.big-title {
+    font-size: 3rem;
+    max-width: 370px;
+    font-family: 'Manrope', Arial;
+    font-weight: 600;
+    line-height: 3.2rem;
+}
+
+.bigger-title {
+    font-size: 4rem;
+    font-family: 'Manrope', Arial;
+    font-weight: 600;
+    line-height: 3.2rem;
+}
+
+.big-title-m {
+    font-size: 4rem;
+    font-family: 'Manrope', Arial;
+    font-weight: 600;
+    line-height: 4rem;
+}
+
+.medium-title {
+    font-size: 2rem;
+    font-family: 'Manrope', Arial;
+    font-weight: 600;
+    line-height: 2.2rem;
+}
+
+.medium-a-title {
+    font-size: 1.2rem;
+    font-family: 'Manrope', Arial;
+    font-weight: 900;
+}
+
+.medium-x-title {
+    font-size: 1.1rem;
+    font-family: 'Manrope', Arial;
+    font-weight: 600;
+    line-height: 2.2rem;
+}
+
+.medium-y-title {
+    font-size: 1rem;
+    font-family: 'Manrope', Arial;
+    font-weight: 600;
+    line-height: 2.2rem;
+}
+
+.medium-title-m {
+    font-size: 1.6rem;
+    font-family: 'Manrope', Arial;
+    font-weight: 600;
+    line-height: 2.2rem;
+}
+
+.small-title {
+    font-size: 0.82em;
+    max-width: 370px;
+    font-family: 'Manrope', Arial;
+    font-weight: 600;
+    line-height: 3.2rem;
+}
+
+.small-title-d {
+    font-size: 0.82em;
+    max-width: 370px;
+    font-family: 'Manrope', Arial;
+    font-weight: 600;
+}
+
+.small-title-b {
+    font-size: 0.92em;
+    max-width: 370px;
+    font-family: 'Manrope', Arial;
+    font-weight: 700;
+}
+
+.small-title-s {
+    font-size: 0.82em;
+    max-width: 370px;
+    font-family: 'Manrope', Arial;
+    font-weight: 700;
+}
+
+.small-title-p {
+    font-size: 1.5rem;
+    max-width: 370px;
+    font-family: 'Manrope', Arial;
+    font-weight: 600;
+    color: #F43B86;
+    line-height: 3.2rem;
+}
+
+.pricing-p {
+    font-size: 1.5rem;
+    font-family: 'Manrope', Arial;
+    font-weight: 800;
+    color: #000;
+}
+
+.pricing-s {
+    font-size: 0.8rem;
+    font-family: 'Open Sans', Arial;
+    font-weight: 600;
+}
+
+.list-item {
+    font-size: 0.8rem;
+    font-family: 'Open Sans', Arial;
+    font-weight: 600;
+}
+
+.description-text {
+    font-size: .85rem;
+    max-width: 500px;
+    font-family: 'Open Sans', Arial;
+    font-weight: 550;
+    color: #444444;
+}
+
+.description-text-m {
+    font-size: .85rem;
+    font-family: 'Open Sans', Arial;
+    font-weight: 550;
+    color: #444444;
+}
+
+.description-text-s {
+    font-size: .85rem;
+    font-family: 'Open Sans', Arial;
+    font-weight: 550;
+    color: #444444;
+}
